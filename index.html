@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/*background design */
+body {
+
+}
+.home-page {
+  background-color: #AED6F1;
+  background-image:url("");
+  text-align: left;
+  color: #f8f8f8;
+  margin: 0px;
+  padding-bottom: 300px;
+  padding-top: 50px;
+
+}
+.about-page {
+  color: #f8f8f8;
+  background-color: rgb(119, 119, 119);
+  padding-bottom: 300px;
+  padding-top: 50px;
+  margin-top: 0px;
+  padding-left: 4%;
+
+}
+
+.faqs-page {
+  padding-top: 50px;
+  padding-bottom: 300px;
+  background-color: #AED6F1;
+  text-align: left;
+  color: #f8f8f8;
+  margin: 0px;
+
+}
+
+.sponsors-page {
+  background-color: rgb(119, 119, 119);
+  color: #f8f8f8;
+  padding-top: 50px;
+  padding-bottom: 300px;
+  margin-top: 0px;
+  padding-left: 4%;
+
+}
+.guide-page {
+  padding-top: 50px;
+  padding-bottom: 300px;
+  background-color: #AED6F1;
+  text-align: left;
+  color: #f8f8f8;
+  margin: 0px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+
+.contact-page {
+  background-color: rgb(119, 119, 119);
+  color: #f8f8f8;
+  padding-top: 50px;
+  padding-bottom: 500px;
+  margin-top: 0px;
+  padding-left: 4%;
+
+}
+.fixedy {
+  position: fixed;
+  width: 100%;
+
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default fixedy">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand main" href = "#">Princeton MedHack</a>
+    </div>
+    <ul  class="nav navbar-nav">
+      <li id = "all-high" class = "about" ><a  class = "about" href="#">About</a></li>
+      <li id = "all-high" class = "faqs"><a href="#" class = "faqs">FAQs</a></li>
+      <li id = "all-high" class = "sponsors"><a href="#" class = "sponsors">Sponsors</a></li>
+      <li id = "all-high" class = "guide"><a href="#" class = "guide">Participant Guide</a></li>
+      <li id = "all-high" class = "contact"><a href="#" class = "contact">Contact</a></li>
+      <li id = "all-high"><a href="#" >Apply Now</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<div id = "main" class = "home-page">
+
+<div  class="container">
+  <h3 style = "position: absolute; top: 20%; left: 60%" >Princeton MedHack</h3>
+  <h4 style = "position: absolute; top: 30%; left: 60%" ><a href= "#">Apply Now</a></h4>
+</div>
+</div>
+
+<div id = "about" class = "about-page">
+
+  <div  class="container">
+    <h3>Basic Navbar Example</h3>
+    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+  </div>
+</div>
+
+<div id = "faqs" class = "faqs-page">
+
+<div  class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+</div>
+
+<div id = "sponsors" class = "sponsors-page">
+
+<div  class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+</div>
+
+<div id = "guide" class = "guide-page">
+
+<div  class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+</div>
+
+<div id = "contact" class = "contact-page">
+
+<div  class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+</div>
+
+</body>
+<script>
+// scroll to function (about)
+$(".about").click(function() {
+    $( ".active" ).removeClass( "active" );
+    $( ".about" ).addClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        'slow');
+});
+
+// scroll to function (FAQS)
+$(".faqs").click(function() {
+    $( ".active" ).removeClass( "active" );
+    $( ".faqs" ).addClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#faqs").offset().top},
+        'slow');
+});
+
+// scroll to function (Sponsors)
+$(".sponsors").click(function() {
+    $( ".active" ).removeClass( "active" );
+    $( ".sponsors" ).addClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#sponsors").offset().top},
+        'slow');
+});
+
+// scroll to function (Guide)
+$(".guide").click(function() {
+    $( ".active" ).removeClass( "active" );
+    $( ".guide" ).addClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#guide").offset().top},
+        'slow');
+});
+
+// scroll to function (Contact)
+$(".contact").click(function() {
+    $( ".active" ).removeClass( "active" );
+    $( ".contact" ).addClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#contact").offset().top},
+        'slow');
+});
+
+// scroll to function (main)
+$(".main").click(function() {
+  $( ".active" ).removeClass( "active" );
+    $('html,body').animate({
+        scrollTop: $("#main").offset().top},
+        'slow');
+});
+
+</script>
+</html>
